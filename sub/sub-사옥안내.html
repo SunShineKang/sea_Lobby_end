@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/fullpage.css">
+    <link rel="stylesheet" href="css/sub-사옥안내.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        $(function () {
+
+
+            window.addEventListener('wheel', (event) => {
+
+                let wheelScroll = event.deltaY
+                if (wheelScroll > 0) {
+
+
+                    $('.sub_menu').css({
+                        //'display': 'none',
+                    });
+                }
+            });
+            $('.menu_bar img').click(function () {
+
+                $('.sub_menu_wrap').toggle();
+
+
+            });
+
+        }); //script end
+    </script>
+    </head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <div class="inner_wrap">
+                <div class="logo">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <strong><a href="../index.html">새로비 소통 페이지</a></strong>
+                </div> <!-- logo end -->
+                <div class="nav">
+                    <ul>
+                        <li><a href="sub-new.html">About</a></li>
+                        <li><a href="sub-공지사항.html">Notice</a></li>
+                        <li><a href="sub-스토리.html">Story</a></li>
+                        <li><a href="sub-Ask.html">Ask</a></li>
+                    </ul>
+                </div> <!-- nav end -->
+                <button class="menu_bar">
+                    <img src="img/메뉴.png" alt="메뉴바 이미지">
+                </button> <!-- menu_bar end -->
+            </div> <!-- inner_wrap end -->
+        </div> <!-- inner end -->
+
+    </header> <!-- header end -->
+    <div class="sub_menu_wrap">
+        <div class="sub_menu">
+            <ul>
+                <li class="li01"><a href="sub-new.html">ABOUT</a></li>
+                <li><a href="sub-new.html">New lobby</a></li>
+                <li><a href="sub-hello.html">안녕, 새로비</a></li>
+            </ul>
+            <ul>
+                <li class="li02"><a href="sub-공지사항.html">NOTICE</a></li>
+                <li><a href="sub-공지사항.html">공지사항</a></li>
+                <li><a href="sub-주요일정.html">주요 일정</a></li>
+                <li><a href="sub-사옥안내.html">사옥 생활 안내</a></li>
+            </ul>
+            <ul>
+                <li class="li03"><a href="sub-스토리.html">STORY</a></li>
+                <li><a href="sub-스토리.html">새로비 스토리</a></li>
+                <li><a href="sub-스토리.html">이벤트/설문</a></li>
+            </ul>
+            <ul>
+                <li class="li04"><a href="sub-Ask.html">ASK</a></li>
+                <li><a href="sub-Ask.html">자주 묻는 질문</a></li>
+                <li><a href="sub-Ask.html">1:1문의</a></li>
+            </ul>
+            <figure>
+                <img src="img/서브메뉴이미지.png" alt="캐릭터 이미지">
+            </figure>
+
+        </div><!-- sub_menu end -->
+        <div class="mobile_sub">
+            <div class="sub_box_wrap">
+                <div class="box01">
+                    <strong>About</strong>
+                </div>
+                <div class="box02">
+                    <div><strong><a href="sub-new.html">New Lobby</a></strong></div>
+                    <div><strong><a href="sub-hello.html">안녕, 새로비!</a></strong></div>
+                </div>
+            </div>
+            <div class="sub_box_wrap">
+                <div class="box01">
+                    <strong>Notice</strong>
+                </div>
+                <div class="box02">
+                    <div><strong><a href="sub-공지사항.html">공지사항</a></strong></div>
+                    <div><strong><a href="sub-주요일정.html">주요 일정 컬랜더</a></strong></div>
+                    <div><strong><a href="sub-사옥안내.html">사옥 생활 안내</a></strong></div>
+                </div>
+            </div>
+            <div class="sub_box_wrap">
+                <div class="box01">
+                    <strong>Story</strong>
+                </div>
+                <div class="box02">
+                    <div><strong><a href="sub-스토리.html">새로비 스토리</a></strong></div>
+                    <div><strong><a href="sub-스토리.html">이벤트/설문</a></strong></div>
+                </div>
+            </div>
+            <div class="sub_box_wrap">
+                <div class="box01">
+                    <strong>Ask</strong>
+                </div>
+                <div class="box02">
+                    <div><strong><a href="sub-Ask.html">자주 묻는 질문</a></strong></div>
+                    <div><strong><a href="sub-Ask.html">1:1 문의</a></strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <section class="section05">
+        <div class="inner">
+            <h3>임직원 가설 통로 및 임시 동선</h3>
+            <p>
+                2024년 5월부터 동/서관 남측 출입구로만 출입이 가능하고, 아케이드를 통한 동관 - 서관 이동이 불가해요. <br>
+                    안전하고 효율적인 공사를 위해 기간별로 동선이 조정될 예정이랍니다. <br>
+                    불편하지 않도록 동선이 바뀔 때 마다 꼼꼼하게 안내해 드릴게요.
+            </p>
+            <figure>
+                <img src="img/sub_5page-1.png" alt="이미지">
+            </figure>
+        </div>
+    </section>
+
+    <section class="sub_footer">
+        <div class="image">
+            <div class="text">
+                <span>Comfortable</span>
+                <p>
+                    리노베이션 중에도 안심하고 근무할 수 있도록 할게요! <br>
+                    안전을 최우선으로 고려하여 업무 공간을 배치하고 <br>
+                    분진과 소음을 엄격하게 관리하겠습니다.
+                </p>
+            </div>
+            <figure> 
+                <img src="https://newlobby.kr/wp-content/themes/lobby-project-2024/assets/img/lobby-character/cha1.svg" alt="이미지">
+            </figure>
+        </div>
+        <div class="image">
+            <div class="text">
+                <span>Convenient</span>
+                <p>
+                    각종 편의 시설을 모아서 더 편리하게 만들게요! <br>
+                    식사와 휴식, 업무를 위한 다목적 공간을 준비할게요. <br>
+                    동/서관 8층의 Co Lounge, 하나로마트 2층의 <br>
+                    Hi Lounge를 기억해주세요.
+                </p>
+            </div>
+            <figure> 
+                <img src="https://newlobby.kr/wp-content/themes/lobby-project-2024/assets/img/lobby-character/cha2.svg" alt="이미지">
+            </figure>
+        </div>
+        <div class="image">
+            <div class="text">
+                <span>Connected</span>
+                <p>
+                    궁금한 점이 있다면 언제든 저를 찾아주세요! <br>
+                    층별 디스플레이와 뉴스레터를통해 리노베이션<br>
+                    진행 사항과 각종 소식들을 업데이트해 드릴께요. <br>
+                    그리고 소통 페이지의 FAQ와 1:1 문의를 통해 <br>
+                    저화 언제든지 소통할실 수 있어요.
+                </p>
+            </div>
+            <figure> 
+                <img src="https://newlobby.kr/wp-content/themes/lobby-project-2024/assets/img/lobby-character/cha3.svg" alt="이미지">
+            </figure>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+        <div class="footer01">
+            <div class="logo">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <strong><a href="#">새로비 소통 페이지</a></strong>
+            </div> <!-- logo end -->
+            <div class="text">
+
+                <strong>(주)새로비 소통 페이지ㅣ</strong>
+                <p>서울특별시 서초구 양재동 231</p>
+                <p>고객센터:080-600-6000</p>
+            </div>
+            <span>Selobby and Communication, to decorate and fix the lobby</span>
+            <span>© 2024 HYUNDAI MOTOR GROUP, ALL rights reserved.</span>
+        </div>
+        <div class="image">
+            <img src="img/footer.svg" alt="이미지">
+        </div>
+    </footer>
+</body>
+</html>

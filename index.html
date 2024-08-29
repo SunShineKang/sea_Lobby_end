@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새로비 소통 페이지</title>
+    <link rel="stylesheet" href="lib/fullpage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        $(function () {
+
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }
+
+            });
+
+            $('.btn01').click(function () {
+
+
+                $('.btn01').css({
+
+                    'background-color': '#1dc28a',
+                    'border-radius': '0 0 0 20px '
+                });
+
+                $('.item01').fadeIn(500);
+                $('.item02').fadeOut(500);
+                $('.item03').fadeOut(500);
+                $('.item04').fadeOut(500);
+
+
+
+
+            });
+            $('.btn02').click(function () {
+
+
+                $('.btn02').css({
+
+                    'background-color': '#f9dc66',
+                    'border-radius': '0 0 20px 0 '
+                });
+
+                $('.item01').fadeOut(500);
+                $('.item02').fadeIn(500);
+                $('.item03').fadeOut(500);
+                $('.item04').fadeOut(500);
+
+
+
+
+            });
+            $('.btn03').click(function () {
+
+
+                $('.btn03').css({
+
+                    'background-color': '#1dc28a',
+                    'border-radius': '0 20px 0 0'
+                });
+
+                $('.item01').fadeOut(500);
+                $('.item02').fadeOut(500);
+                $('.item03').fadeIn(500);
+                $('.item04').fadeOut(500);
+
+
+
+
+            });
+            $('.btn04').click(function () {
+
+
+                $('.btn04').css({
+
+                    'background-color': '#f9dc66',
+                    'border-radius': '0 0 20px 0 '
+                });
+
+                $('.item01').fadeOut(500);
+                $('.item02').fadeOut(500);
+                $('.item03').fadeOut(500);
+                $('.item04').fadeIn(500);
+
+
+            });
+
+            window.addEventListener('wheel', (event) => {
+
+                let wheelScroll = event.deltaY
+                if (wheelScroll > 0) {
+                    $('.text ul li').css({
+                        'background-color': '#ced2db',
+                        'border-radius': '0'
+                    });
+
+                 /* $('.sub_menu').css({
+                        'display': 'none',
+                    }); */
+                }
+            });
+            $('.menu_bar img').click(function () {
+
+                $('.sub_menu_wrap').toggle();
+
+
+            });
+            $('.button01').click(function () {
+
+                $('.moving02').fadeIn();
+                $('.moving01').fadeOut();
+
+
+            });
+
+
+
+
+
+            $('.button02').click(function () {
+
+                $('.moving02').fadeOut();
+                $('.moving01').fadeIn();
+
+            });
+
+            $('.button01').mouseenter(function () {
+
+                $(this).css({
+                    'color': 'red'
+                });
+                $('.button02').mouseenter(function () {
+
+                    $(this).css({
+                        'color': 'red'
+                    });
+
+
+                });
+                $('.button01').mouseleave(function () {
+
+                    $(this).css({
+                        'color': '#333333'
+                    });
+
+
+                });
+                $('.button02').mouseleave(function () {
+
+                    $(this).css({
+                        'color': '#333333'
+                    });
+
+
+                });
+
+
+
+            });
+            $('.button1').mouseenter(function () {
+                $(this).css({
+                    'color': 'red'
+                });
+                $('.page01_wrap').fadeIn(0);
+                $('.page02_wrap').fadeOut(0);
+                $('.page03_wrap').fadeOut(0);
+
+            });
+            $('.button2').mouseenter(function () {
+                $(this).css({
+                    'color': 'red'
+                });
+                $('.page01_wrap').fadeOut(0);
+                $('.page02_wrap').fadeIn(0);
+                $('.page03_wrap').fadeOut(0);
+
+            });
+            $('.button3').mouseenter(function () {
+                $(this).css({
+                    'color': 'red'
+                });
+                $('.page01_wrap').fadeOut(0);
+                $('.page02_wrap').fadeOut(0);
+                $('.page03_wrap').fadeIn(0);
+
+            });
+
+            $('.click button').mouseleave(function () {
+                $('.click button').css({
+                    'color': '#333333'
+                });
+            });
+
+            $('')
+
+        }); //script end
+    </script>
+</head>
+
+<body>
+    <section class="section01">
+        <header class="header">
+            <div class="inner">
+                <div class="inner_wrap">
+                    <div class="logo">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <strong><a href="#">새로비 소통 페이지</a></strong>
+                    </div> <!-- logo end -->
+                    <div class="nav">
+                        <ul>
+                            <li><a href="sub/sub-new.html">About</a></li>
+                            <li><a href="sub/sub-공지사항.html">Notice</a></li>
+                            <li><a href="sub/sub-스토리.html">Story</a></li>
+                            <li><a href="sub/sub-Ask.html">Ask</a></li>
+                        </ul>
+                    </div> <!-- nav end -->
+                    <button class="menu_bar">
+                        <img src="img/메뉴.png" alt="메뉴바 이미지">
+                    </button> <!-- menu_bar end -->
+                </div> <!-- inner_wrap end -->
+            </div> <!-- inner end -->
+
+        </header> <!-- header end -->
+        <div class="sub_menu_wrap">
+            <div class="sub_menu">
+                <ul>
+                    <li class="li01"><a href="sub/sub-new.html">ABOUT</a></li>
+                    <li><a href="sub/sub-new.html">New lobby</a></li>
+                    <li><a href="sub/sub-hello.html">안녕, 새로비</a></li>
+                </ul>
+                <ul>
+                    <li class="li02"><a href="sub/sub-공지사항.html">NOTICE</a></li>
+                    <li><a href="sub/sub-공지사항.html">공지사항</a></li>
+                    <li><a href="sub/sub-주요일정.html">주요 일정</a></li>
+                    <li><a href="sub/sub-사옥안내.html">사옥 생활 안내</a></li>
+                </ul>
+                <ul>
+                    <li class="li03"><a href="sub/sub-스토리.html">STORY</a></li>
+                    <li><a href="sub/sub-스토리.html">새로비 스토리</a></li>
+                    <li><a href="sub/sub-스토리.html">이벤트/설문</a></li>
+                </ul>
+                <ul>
+                    <li class="li04"><a href="sub/sub-Ask.html">ASK</a></li>
+                    <li><a href="sub/sub-Ask.html">자주 묻는 질문</a></li>
+                    <li><a href="sub/sub-Ask.html">1:1문의</a></li>
+                </ul>
+                <figure>
+                    <img src="img/서브메뉴이미지.png" alt="캐릭터 이미지">
+                </figure>
+                <button>닫기</button>
+            </div><!-- sub_menu end -->
+            <div class="mobile_sub">
+                <div class="sub_box_wrap">
+                    <div class="box01">
+                        <strong>About</strong>
+                    </div>
+                    <div class="box02">
+                        <div><strong><a href="sub/sub-new.html">New Lobby</a></strong></div>
+                        <div><strong><a href="sub/sub-hello.html">안녕, 새로비!</a></strong></div>
+                    </div>
+                </div>
+                <div class="sub_box_wrap">
+                    <div class="box01">
+                        <strong>Notice</strong>
+                    </div>
+                    <div class="box02">
+                        <div><strong><a href="sub/sub-공지사항.html">공지사항</a></strong></div>
+                        <div><strong><a href="sub/sub-주요일정.html">주요 일정 컬랜더</a></strong></div>
+                        <div><strong><a href="sub/sub-사옥안내.html">사옥 생활 안내</a></strong></div>
+                    </div>
+                </div>
+                <div class="sub_box_wrap">
+                    <div class="box01">
+                        <strong>Story</strong>
+                    </div>
+                    <div class="box02">
+                        <div><strong><a href="sub/sub-스토리.html">새로비 스토리</a></strong></div>
+                        <div><strong><a href="sub/sub-스토리.html">이벤트/설문</a></strong></div>
+                    </div>
+                </div>
+                <div class="sub_box_wrap">
+                    <div class="box01">
+                        <strong>Ask</strong>
+                    </div>
+                    <div class="box02">
+                        <div><strong><a href="sub/sub-Ask.html">자주 묻는 질문</a></strong></div>
+                        <div><strong><a href="sub/sub-Ask.html">1:1 문의</a></strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item_wrap">
+            <div class="item_wrap01">
+                <h1>Always <br> Transforming</h1>
+                <div class="text">
+                    <span>NEW STORY</span>
+                    <ul>
+                        <li class="btn01"></li>
+                        <li class="btn02"></li>
+                        <li class="btn03"></li>
+                        <li class="btn04"></li>
+                    </ul>
+                </div><!-- text end -->
+                <div class="image_wrap">
+                    <div class="item item01">
+                        <p>변해가는 로비를 확인하세요!📣</p>
+                        <figure>
+                            <img src="img/1page1-1.jpg" alt="로비이미지">
+                        </figure>
+                    </div> <!-- item end -->
+                    <div class="item item02">
+                        <p>변해가는 로비를 확인하세요!📣</p>
+                        <figure>
+                            <img src="img/1page1-2.jpg" alt="로비이미지">
+                        </figure>
+                    </div> <!-- item end -->
+                    <div class="item item03">
+                        <p>변해가는 로비를 확인하세요!📣</p>
+                        <figure>
+                            <img src="img/1page1-3.jpg" alt="로비이미지">
+                        </figure>
+                    </div> <!-- item end -->
+                    <div class="item item04">
+                        <p>변해가는 로비를 확인하세요!📣</p>
+                        <figure>
+                            <img src="img/1page1-4.jpg" alt="로비이미지">
+                        </figure>
+                    </div> <!-- item end -->
+                </div> <!-- image_wrap end -->
+            </div> <!-- item_wrap01 end -->
+            <div class="item_wrap02">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/1page2-1.jpg" alt="로비이미지">
+                            </figure>
+                        </div> <!-- swiper-slide end -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/1page2-2.jpg" alt="로비이미지">
+                            </figure>
+                        </div> <!-- swiper-slide end -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/1page2-3.jpg" alt="로비이미지">
+                            </figure>
+                        </div> <!-- swiper-slide end -->
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="img/1page2-4.jpg" alt="로비이미지">
+                            </figure>
+                        </div> <!-- swiper-slide end -->
+                    </div>
+                </div><!-- item_wrap02 end -->
+            </div>
+
+
+
+    </section><!-- section01 end -->
+
+
+    <section class="section02">
+        <div class="cont_wrap">
+            <div class="cont01">
+                <strong>New Lobby Communication Page</strong>
+                <h4>이렇게 로비가 변해요!😘</h4>
+                <div class="text">
+                    <span>편안하고, 편리한 로비를 찾아라!</span>
+                    <p>여러분들의 휴식공간을 스마트하며 <br> 익사익팅하게 만들어볼께요!</p>
+                </div> <!-- text end -->
+                <figure>
+                    <img src="img/2page-1.png" alt="캐릭이미지">
+                </figure>
+
+            </div> <!-- item01 end -->
+            <div class="cont02">
+                <figure>
+                    <img src="img/2page-2.svg" alt="캐릭터이미지">
+                    <img src="img/2page-3.svg" alt="캐릭터이미지">
+                </figure>
+
+                <div class="video_wrap">
+                    <video class="moving01" autoplay loop muted>
+                        <source src="img/로비영상1.mp4" type="video/mp4" />
+                    </video>
+                    <video class="moving02" autoplay loop muted>
+                        <source src="img/로비영상2.mp4" type="video/mp4" />
+                    </video>
+                    <div class="button">
+                        <button class="button01">#회의실</button>
+                        <button class="button02">#로비</button>
+                    </div>
+                </div> <!-- video_wrap end -->
+
+
+            </div> <!-- item02 end -->
+        </div> <!-- item_wrap end -->
+    </section> <!-- seㅊtion02 end -->
+
+    <section class="section03">
+        <div class="page01_wrap flex">
+            <div class="click">
+                <button class="button1">#도면설계</button>
+                <button class="button3">#공사과정</button>
+                <button class="button4">#로비완성</button>
+            </div>
+            <div class="page_wrap">
+                <div class="page01">
+                    <figure><img src="img/3page-1.jpg" alt="이미지"></figure>
+                </div>
+                <div class="page02">
+
+
+                    <span>
+                        자유자재로 늘릴 수 있는 제 유연한 몸으로 <br>
+                        리노베이션 현장의 구석구석을 살피며 안전을 <br>
+                        확인하고, 불편한 점은 없는지 늘 먼저 신경 쓸께요.
+                    </span>
+
+                    <figure><img src="img/3page2-1.svg" alt="이미지"></figure>
+                </div>
+
+            </div> <!-- page01 end  -->
+        </div><!-- page01_wrap -->
+        <div class="page02_wrap flex">
+            <div class="click">
+                <button class="button1">#도면설계</button>
+                <button class="button2">#공사과정</button>
+                <button class="button3">#로비완성</button>
+            </div>
+            <div class="page_wrap">
+                <div class="page01">
+                    <figure><img src="img/3page-2.jpg" alt="이미지"></figure>
+                </div>
+                <div class="page02">
+
+
+                    <span>
+                        공사기간동안 여러분들의 업무에 방해없도록 <br>
+                        시간을 조정할 거예요! <br>
+                        조금만 기다려 주세요.
+                    </span>
+
+                    <figure><img src="img/3page2-2.svg" alt="이미지"></figure>
+                </div>
+
+            </div> <!-- page01 end  -->
+        </div><!-- page01_wrap -->
+        <div class="page03_wrap flex">
+            <div class="click">
+                <button class="button1">#도면설계</button>
+                <button class="button2">#공사과정</button>
+                <button class="button3">#로비완성</button>
+            </div>
+            <div class="page_wrap">
+                <div class="page01">
+                    <figure><img src="img/3page-3.jpg" alt="이미지"></figure>
+                </div>
+                <div class="page02">
+
+
+                    <span>
+                        짜잔! 로비가 완성되었어요. <br>
+                        언제든 여러분들을 먼저 생각하는 새로이가 <br>
+                        되겠어요!
+                    </span>
+
+                    <figure><img src="img/3page2-3.svg" alt="이미지"></figure>
+                </div>
+
+            </div> <!-- page01 end  -->
+        </div><!-- page01_wrap -->
+    </section> <!-- section03 end -->
+
+
+
+    <section class="section04">
+
+        <div class="inner">
+            <h4>무엇이든 물어봐 주세요🥰</h4>
+            <span><a href="../sub-Ask.html">"HELP" Click</a></span>
+
+            <div class="scale">
+                <figure class="page4-image">
+                    <img src="img/서브메뉴이미지.png" alt="이미지">
+
+                </figure>
+                <figure class="page4-image01"> <a href="#"><img src="img/새로비 서브-2-1.svg" alt="이미지"></a></figure>
+            </div>
+        </div>
+
+    </section> <!-- section04 end -->
+
+    <section class="section05">
+
+        <div class="google_wrap">
+            <div class="google">
+                <figure>
+                    <img src="img/5page-main.svg" alt="">
+                </figure>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25327.541302432423!2d126.9734577!3d37.4856794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e7a40e6723%3A0x4340edf565ab5382!2z7ZiE64yA7J6Q64-Z7LCoIOqwleuCqOuFvO2YhOyngOygkA!5e0!3m2!1sko!2skr!4v1723173508326!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!-- google end -->
+            <div class="text">
+                <h4>오시는길</h4>
+                <div>
+                    <img src="img/5page-1.png" alt="이미지">
+                    <span>서울시 양재구 양재동 521-14</span>
+                </div>
+                <div>
+                    <img src="img/5page-2.png" alt="이미지">
+                    <span>080-600-6000</span>
+                </div>
+                <div>
+                    <img src="img/5page-3.png" alt="이미지">
+                    <span><a href="https://www.instagram.com/hyundai_kor/">instagram.com/hyndai_kor</a></span>
+                </div>
+                <div>
+                    <img src="img/5page-4.png" alt="이미지">
+                    <span><a href="https://www.facebook.com/hyundai.kor" target="_blank">facebook.com/hyundai.kor</a></span>
+                </div>
+            </div>
+        </div> <!-- google_wrap end -->
+
+    </section> <!-- section05end -->
+    <footer>
+        <div class="footer01">
+            <div class="logo">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <strong><a href="#">새로비 소통 페이지</a></strong>
+            </div> <!-- logo end -->
+            <div class="text">
+
+                <strong>(주)새로비 소통 페이지ㅣ</strong>
+                <p>서울특별시 서초구 양재동 231</p>
+                <p>고객센터:080-600-6000</p>
+            </div>
+            <span>Selobby and Communication, to decorate and fix the lobby</span>
+            <span>© 2024 HYUNDAI MOTOR GROUP, ALL rights reserved.</span>
+        </div>
+        <div class="image">
+            <img src="img/footer.svg" alt="이미지">
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
